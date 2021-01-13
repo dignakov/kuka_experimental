@@ -13,6 +13,7 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>kuka_kr5_support</exec_depend>
   <exec_depend>kuka_kr6_support</exec_depend>
   <exec_depend>kuka_resources</exec_depend>
   <!--<exec_depend>kuka_rsi_hw_interface</exec_depend>-->

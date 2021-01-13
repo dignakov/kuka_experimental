@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="kuka_kr5_arc" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:arg name="rsi_ip" default="127.0.0.1" />
+
+  <xacro:include filename="kr5_arc_macro.xacro" />
+  <xacro:kuka_kr5_arc prefix=""/>
+
+  <xacro:include filename="kr5_arc_macro.ros2_control.xacro" />
+  <xacro:kuka_kr5_arc_system_position_only name="kuka_kr5_arc" prefix="" rsi_ip="$(arg rsi_ip)" />
+</robot>
