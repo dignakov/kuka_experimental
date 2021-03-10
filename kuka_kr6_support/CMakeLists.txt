@@ -1,10 +1,9 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 
 project(kuka_kr6_support)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
 
-catkin_package()
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
@@ -13,4 +12,7 @@ if (CATKIN_ENABLE_TESTING)
 endif()
 
 install(DIRECTORY config launch meshes urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+	DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

@@ -1,3 +1,12 @@
+# WIP ros2 support
+
+ported:
+
+- kr6_support
+- kuka_resources
+- kuka_rsi_hw_interface
+- kuka_rsi_simulator
+
 # Kuka experimental
 
 [![Build Status](http://build.ros.org/job/Kdev__kuka_experimental__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/job/Kdev__kuka_experimental__ubuntu_xenial_amd64)
