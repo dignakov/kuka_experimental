@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(kuka_kr5_support)
+
+find_package(ament_cmake REQUIRED)
+
+if (CATKIN_ENABLE_TESTING)
+endif()
+
+install(DIRECTORY config launch meshes urdf
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()
